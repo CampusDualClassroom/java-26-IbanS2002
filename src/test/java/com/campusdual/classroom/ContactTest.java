@@ -60,17 +60,17 @@ class ContactTest {
 
     @Test
     void testContactCodeGenerator() {
-        Contact c1 = new Contact("Javier", "López", "654321321");
+        Contact c1 = new Contact("Javier", "Lopez", "654321321");
         assertEquals("jlopez", c1.getCode(), "Contact code not match with expected value");
-        Contact c2 = new Contact("Carlos", "Fernández-Simón", "654321321");
+        Contact c2 = new Contact("Carlos", "Fernandez-Simon", "654321321");
         assertEquals("cfernandez-simon", c2.getCode(), "Contact code not match with expected value");
         Contact c3 = new Contact("Jose Manuel", "Soria", "654321321");
         assertEquals("jsoria", c3.getCode(), "Contact code not match with expected value");
         Contact c4 = new Contact("Santiago","Fernández Rocha", "654321321");
         assertEquals("sfrocha", c4.getCode(), "Contact code not match with expected value");
-        Contact c5 = new Contact("Esteban","Serrano del Río", "654321321");
+        Contact c5 = new Contact("Esteban","Serrano del Rio", "654321321");
         assertEquals("esdelrio", c5.getCode(), "Contact code not match with expected value");
-        Contact c6 = new Contact("Fernando Miguel","Juan de los Santos Requejo León", "654321321");
+        Contact c6 = new Contact("Fernando Miguel","Juan de los Santos Requejo Leon", "654321321");
         assertEquals("fjdelossantosrequejoleon", c6.getCode(), "Contact code not match with expected value");
     }
 }
